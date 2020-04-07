@@ -23,24 +23,24 @@ const Navbar = ({ title, icon }) => {
 
   const authLinks = (
     <Fragment>
-      <li>Hello {user && user.name}</li>
+      <li><b>Hello {user && user.name}</b></li>
       <li>
         <a onClick={onLogout} href="#!">
           <i className="fas fa-sign-out-alt" />{" "}
-          <span className="hide-sm">Logout</span>
+          <span className="hide-sm"><b>Logout</b></span>
         </a>
       </li>
     </Fragment>
-  );
+  );  
 
   const guestLinks = (
     <Fragment>
       <ul className = "navbar-nav">
       <li className ="nav-item">
-        <Link  to="/register">Register</Link>
+        <Link  to="/register"><b>Register</b></Link>
       </li>
       <li className ="nav-item">
-        <Link to="/login">Login</Link>
+        <Link to="/login"><b>Login</b></Link>
       </li>
       </ul>
     </Fragment>
